@@ -10,23 +10,31 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 - [x] `requirements.txt` con dependencias base
 - [x] `.gitignore` configurado
 - [x] Repositorio Git inicializado con primer commit
-- [ ] Entorno virtual Python 3.11 creado e instalado (`python -m venv venv` — en tu máquina)
+- [x] Entorno virtual Python 3.11 creado e instalado (`python -m venv venv`)
 - [x] Ollama instalado
-- [ ] Modelos descargados en Ollama (`llama3.2` y `nomic-embed-text`) — ver comandos abajo
-- [ ] PDFs de reglamentos, calendarios y guías del instituto recopilados en `data/reglamentos/` (**no se encontraron PDFs de reglamentos en tu Drive — ver sección abajo**)
+- [x] Modelos descargados en Ollama (`llama3.2` y `nomic-embed-text`)
+- [ ] PDFs de reglamentos, calendarios y guías del instituto recopilados en `data/reglamentos/` (**no se encontraron PDFs de reglamentos en tu Drive — ver sección abajo, sigue pendiente de secretaría**)
+
+## Estado: Sprint 2 — Pipeline de ingesta y base vectorial (09 jun – 22 jun 2026)
+
+- [x] `scripts/ingest.py` implementado: carga de PDFs (`PyPDFLoader`), división en chunks (`RecursiveCharacterTextSplitter`), embeddings (`OllamaEmbeddings` con `nomic-embed-text`) y persistencia en `Chroma`
+- [x] Probado de punta a punta con 2 PDFs de **ejemplo/ficticios** en `data/reglamentos/` (reglamento académico y calendario académico simulados) — **no son los documentos oficiales del instituto**, que siguen pendientes de secretaría
+- [x] `chroma_db/` generado y verificado: 5 chunks indexados en la colección `langchain`
+- [ ] Reingesta con los PDFs oficiales del ISTTE una vez se obtengan de secretaría
 
 ## Estructura del proyecto
 
 ```
 rag-istte-widget/
 ├── data/
-│   └── reglamentos/       # Aquí van los PDFs oficiales del instituto (US-01)
+│   └── reglamentos/       # PDFs de ejemplo (Sprint 2); pendientes los oficiales del instituto (US-01)
 ├── scripts/
-│   └── ingest.py          # Script de ingesta (Sprint 2, aún no implementado)
+│   └── ingest.py          # Script de ingesta (Sprint 2, implementado y probado)
 ├── src/
 │   └── (lógica del backend RAG — Sprint 2-3)
 ├── app/
 │   └── (endpoints FastAPI — Sprint 3)
+├── chroma_db/             # Base vectorial persistida (generada por ingest.py, no se versiona)
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -58,4 +66,16 @@ pip install -r requirements.txt
 # 3. Descargar los dos modelos que usa el proyecto:
 #    - llama3.2: el modelo generativo (responde al estudiante)
 #    - nomic-embed-text: el modelo de embeddings (convierte texto en vectores para ChromaDB)
-ollama pull llama3.
+ollama pull llama3.2
+ollama pull nomic-embed-text
+```
+
+## Sprint 2 — Cómo correr la ingesta
+
+Con el entorno del Sprint 1 listo y al menos un PDF en `data/reglamentos/`:
+
+```bash
+python scripts/ingest.py
+```
+
+Esto genera (o actualiza) la carpeta `chroma_db/` con los vectores de todos los PDFs presentes en `data/reglamentos/`. Actualmente esa carpeta solo contiene los 2 PDFs de ejemplo usados para validar el pipeline — falta reemplazarlos por los documentos oficiales del instituto y volver a correr el script.
