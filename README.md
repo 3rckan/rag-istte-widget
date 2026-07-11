@@ -9,9 +9,10 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 - [x] Estructura de carpetas del proyecto
 - [x] `requirements.txt` con dependencias base
 - [x] `.gitignore` configurado
-- [ ] Repositorio Git inicializado con primer commit (pendiente: correr en tu máquina o pedir que lo haga aquí)
+- [x] Repositorio Git inicializado con primer commit
 - [ ] Entorno virtual Python 3.11 creado e instalado (`python -m venv venv` — en tu máquina)
-- [ ] Ollama instalado + modelo `llama3.2` descargado (**requiere tu máquina con GPU, no se puede hacer en este entorno**)
+- [x] Ollama instalado
+- [ ] Modelos descargados en Ollama (`llama3.2` y `nomic-embed-text`) — ver comandos abajo
 - [ ] PDFs de reglamentos, calendarios y guías del instituto recopilados en `data/reglamentos/` (**no se encontraron PDFs de reglamentos en tu Drive — ver sección abajo**)
 
 ## Estructura del proyecto
@@ -43,6 +44,8 @@ Estos documentos normalmente los entrega secretaría o coordinación — tu nota
 
 ## Siguiente paso manual (en tu computadora, no en este entorno)
 
+Ollama ya está instalado. Falta:
+
 ```bash
 # 1. Crear entorno virtual
 python -m venv venv
@@ -52,10 +55,7 @@ venv\Scripts\activate        # Windows
 # 2. Instalar dependencias
 pip install -r requirements.txt
 
-# 3. Instalar Ollama (https://ollama.com/download) y descargar el modelo
-ollama pull llama3.2
-ollama pull nomic-embed-text
-
-# 4. Verificar que el modelo responde
-ollama run llama3.2 "hola"
-```
+# 3. Descargar los dos modelos que usa el proyecto:
+#    - llama3.2: el modelo generativo (responde al estudiante)
+#    - nomic-embed-text: el modelo de embeddings (convierte texto en vectores para ChromaDB)
+ollama pull llama3.
