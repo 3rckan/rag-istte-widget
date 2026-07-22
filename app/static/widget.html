@@ -88,7 +88,10 @@
 </div>
 
 <script>
-  const API_URL = "http://127.0.0.1:8000/query";
+  // URL relativa: el widget y el endpoint /query los sirve el mismo backend
+  // (en local, http://127.0.0.1:8000; en produccion, el dominio de Render),
+  // asi que no hay que tocar esto al desplegar.
+  const API_URL = "/query";
   const form = document.getElementById("chat-form");
   const input = document.getElementById("chat-input");
   const messages = document.getElementById("chat-messages");

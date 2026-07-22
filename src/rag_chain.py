@@ -3,11 +3,18 @@
 # relevante en ChromaDB (retrieval) y se lo pasa a Llama 3.2 para que
 # genere la respuesta (generation).
 
+import os
+
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 
 PERSIST_DIR = "chroma_db"
+
+# En desarrollo, Ollama corre en localhost. En despliegue (Sprint 4) puede
+# vivir en otro host/contenedor: se configura con la variable de entorno
+# OLLAMA_BASE_URL (ver docs/DEPLOY_RENDER.md).
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 PROMPT_TEMPLATE = """Eres un asistente virtual del Instituto Superior Tecnologico Tecnoecuatoriano (ISTTE).
 Responde la pregunta del estudiante usando UNICAMENTE la informacion del siguiente contexto.
@@ -24,7 +31,7 @@ Respuesta:"""
 
 
 def _obtener_vectorstore():
-    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+    embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=OLLAMA_BASE_URL)
     return Chroma(persist_directory=PERSIST_DIR, embedding_function=embeddings)
 
 
@@ -35,7 +42,7 @@ def responder_pregunta(pregunta: str, k: int = 4) -> dict:
 
     contexto = "\n\n".join(doc.page_content for doc in documentos)
     prompt = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
-    modelo = OllamaLLM(model="llama3.2")
+    modelo = OllamaLLM(model="llama3.2", base_url=OLLAMA_BASE_URL)
     cadena = prompt | modelo
 
     respuesta = cadena.invoke({"contexto": contexto, "pregunta": pregunta})

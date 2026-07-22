@@ -22,6 +22,21 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 - [x] `chroma_db/` generado y verificado: 5 chunks indexados en la colección `langchain`
 - [ ] Reingesta con los PDFs oficiales del ISTTE una vez se obtengan de secretaría
 
+## Estado: Sprint 3 — Endpoint `/query` y widget de chat (23 jun – 06 jul 2026)
+
+- [x] `app/main.py`: endpoint `POST /query` en FastAPI, CORS configurable por variable de entorno `ALLOWED_ORIGINS` (abierto por defecto en desarrollo)
+- [x] `src/rag_chain.py`: cadena RAG (retrieval en ChromaDB + generación con Llama 3.2)
+- [x] `app/static/widget.html` e `index.html`: widget de chat embebible, servido en `/widget/`
+- [x] Probado de punta a punta contra los PDFs de ejemplo (ver `docs/evaluacion/`)
+
+## Estado: Sprint 4 — Evaluación y despliegue (07 jul – 20 jul 2026)
+
+- [x] `scripts/evaluate.py`: corre 30 consultas de prueba contra el pipeline y genera un reporte en `docs/evaluacion/` (JSON + Markdown) con respuesta, fuentes recuperadas y tiempo por consulta
+- [x] Evaluación corrida: 30/30 consultas sin errores, ~3s de latencia promedio (ver `docs/evaluacion/resultados_*.md` para el detalle y hallazgos)
+- [x] `Dockerfile` + `entrypoint.sh` + `render.yaml`: configuración lista para desplegar en Render.com (ver `docs/DEPLOY_RENDER.md`)
+- [ ] **Reingesta y re-evaluación con los PDFs oficiales del ISTTE** una vez se obtengan de secretaría — la evaluación actual corrió contra PDFs de ejemplo, solo valida el pipeline
+- [ ] **Despliegue real en Render.com** — requiere una cuenta de Render y, según lo documentado en `docs/DEPLOY_RENDER.md`, un plan de al menos 2 GB de RAM (el plan gratuito no alcanza para correr Ollama con estos modelos)
+
 ## Estructura del proyecto
 
 ```
@@ -29,13 +44,20 @@ rag-istte-widget/
 ├── data/
 │   └── reglamentos/       # PDFs de ejemplo (Sprint 2); pendientes los oficiales del instituto (US-01)
 ├── scripts/
-│   └── ingest.py          # Script de ingesta (Sprint 2, implementado y probado)
+│   ├── ingest.py           # Script de ingesta (Sprint 2, implementado y probado)
+│   └── evaluate.py         # Evaluación con 30 consultas (Sprint 4)
 ├── src/
-│   └── (lógica del backend RAG — Sprint 2-3)
+│   └── rag_chain.py        # Lógica del backend RAG (Sprint 2-3)
 ├── app/
-│   └── (endpoints FastAPI — Sprint 3)
+│   ├── main.py              # Endpoint /query en FastAPI (Sprint 3)
+│   └── static/              # Widget de chat embebible (Sprint 3)
+├── docs/
+│   ├── evaluacion/          # Reportes de evaluación (Sprint 4)
+│   └── DEPLOY_RENDER.md     # Guía de despliegue (Sprint 4)
+├── Dockerfile, entrypoint.sh, render.yaml  # Config de despliegue (Sprint 4)
 ├── chroma_db/             # Base vectorial persistida (generada por ingest.py, no se versiona)
 ├── requirements.txt
+├── .env.example
 ├── .gitignore
 └── README.md
 ```

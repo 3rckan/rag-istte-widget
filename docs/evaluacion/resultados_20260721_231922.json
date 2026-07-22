@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "categoria": "asistencia",
+    "pregunta": "¿Cuál es el porcentaje mínimo de asistencia que debo cumplir?",
+    "respuesta": "El porcentaje mínimo de asistencia que debes cumplir para evitar perder una asignatura por inasistencia es del 80%.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.84,
+    "error": null
+  },
+  {
+    "id": 2,
+    "categoria": "asistencia",
+    "pregunta": "¿Qué pasa si no cumplo con la asistencia mínima?",
+    "respuesta": "Si no cumples con el 80% de asistencia a las horas clase programadas en cada asignatura durante el periodo académico, te perderás esa asignatura y no tendrás derecho a rendir examenes finales.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.95,
+    "error": null
+  },
+  {
+    "id": 3,
+    "categoria": "asistencia",
+    "pregunta": "¿En cuánto tiempo puedo justificar una inasistencia por salud?",
+    "respuesta": "Según el Artículo 3 del Reglamento, puedes justificar una inasistencia por salud dentro de un plazo máximo de 72 horas posteriores a la fecha de la falta.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.02,
+    "error": null
+  },
+  {
+    "id": 4,
+    "categoria": "asistencia",
+    "pregunta": "¿Ante quién se justifican las inasistencias?",
+    "respuesta": "Las inasistencias deben ser justificadas ante la Coordinación Académica dentro de un plazo máximo de 72 horas posteriores a la fecha de la falta.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.5,
+    "error": null
+  },
+  {
+    "id": 5,
+    "categoria": "calificaciones",
+    "pregunta": "¿Cuál es la escala de calificaciones del instituto?",
+    "respuesta": "La escala de calificaciones del instituto va de 0 a 10 puntos. La nota minima de aprobación por asignatura no se especifica en el documento, por lo que te recomiendo consultar con la Secretaria Académica para obtener más información adicional.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.27,
+    "error": null
+  },
+  {
+    "id": 6,
+    "categoria": "calificaciones",
+    "pregunta": "¿Cuál es la nota mínima para aprobar una asignatura?",
+    "respuesta": "La nota mínima para aprobar una asignatura en el Instituto Superior Tecnologico Tecnoecuatoriano (ISTTE) es de 7/10.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.6,
+    "error": null
+  },
+  {
+    "id": 7,
+    "categoria": "calificaciones",
+    "pregunta": "Tengo un 6 sobre 10, ¿puedo rendir un examen de recuperación?",
+    "respuesta": "Sí, puedes rendir un examen de recuperación. Como tienes un 6 sobre 10, que cae entre la nota de 5 y 6.99, tienes derecho a rendir un examen de recuperación antes del cierre del periodo académico. Los examenes de recuperación se rendirán del 20 al 24 de julio de 2026, según el horario publicado por cada coordinación de carrera.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 4.15,
+    "error": null
+  },
+  {
+    "id": 8,
+    "categoria": "calificaciones",
+    "pregunta": "¿Qué rango de notas da derecho a examen de recuperación?",
+    "respuesta": "Los estudiantes con nota entre 5 y 6.99 sobre 10 tienen derecho a rendir un examen de recuperación antes del cierre del periodo académico.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.47,
+    "error": null
+  },
+  {
+    "id": 9,
+    "categoria": "matriculas",
+    "pregunta": "¿Cuándo es el periodo de matrícula ordinaria?",
+    "respuesta": "El período de matriculación ordinaria se realiza dentro de las dos primeras semanas del periodo académico, que en este caso es del 16 al 27 de febrero de 2026.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.73,
+    "error": null
+  },
+  {
+    "id": 10,
+    "categoria": "matriculas",
+    "pregunta": "¿Qué pasa si me matriculo después del plazo ordinario?",
+    "respuesta": "Si te matriculas después del plazo ordinario (del 16 al 27 de febrero de 2026), debes acogerse al proceso de matricula extraordinaria, previo pago del recargo establecido por secretaria general.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.89,
+    "error": null
+  },
+  {
+    "id": 11,
+    "categoria": "matriculas",
+    "pregunta": "¿Tiene costo adicional la matrícula extraordinaria?",
+    "respuesta": "Sí, la matriculación extraordinaria tiene un recargo económico. Se requiere pagar este recargo antes de acogerse al proceso de matricula extraordinaria. Puedes consultar con la Secretaría General para obtener más información sobre el recargo y las condiciones específicas de la matrícula extraordinaria.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.37,
+    "error": null
+  },
+  {
+    "id": 12,
+    "categoria": "validacion",
+    "pregunta": "¿Puedo validar una materia si ya tengo experiencia laboral en el área?",
+    "respuesta": "Sí, puedes validar una materia si ya tienes experiencia laboral en el área. De acuerdo con Art. 5 de nuestro calendario académico, los estudiantes que acrediten conocimientos previos mediante experiencia laboral certificada o estudios afines pueden solicitar la validación de una o mas asignaturas ante la coordinación académica, adjuntando la documentación de respaldo correspondiente.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.94,
+    "error": null
+  },
+  {
+    "id": 13,
+    "categoria": "validacion",
+    "pregunta": "¿Ante quién se solicita la validación de conocimientos?",
+    "respuesta": "Se solicita la validación de conocimientos ante la Coordinación Académica.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.14,
+    "error": null
+  },
+  {
+    "id": 14,
+    "categoria": "validacion",
+    "pregunta": "¿Qué documentación necesito para validar una asignatura?",
+    "respuesta": "Para validar una asignatura, debes adjuntar la documentación de respaldo correspondiente en tu solicitud ante la coordinación académica.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.41,
+    "error": null
+  },
+  {
+    "id": 15,
+    "categoria": "calendario",
+    "pregunta": "¿Cuándo inician y terminan las clases del periodo 2026-I?",
+    "respuesta": "Las clases del Periodo Académico 2026-I inician el 1 de marzo de 2026 y terminan el 10 de julio de 2026.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.69,
+    "error": null
+  },
+  {
+    "id": 16,
+    "categoria": "calendario",
+    "pregunta": "¿Cuáles son las fechas de matrículas ordinarias?",
+    "respuesta": "Las fechas de matriculación ordinarias se realizan del 16 al 27 de febrero de 2026, a través del portal académico del instituto.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.59,
+    "error": null
+  },
+  {
+    "id": 17,
+    "categoria": "calendario",
+    "pregunta": "¿Cuáles son las fechas de matrículas extraordinarias?",
+    "respuesta": "Las fechas de matriculación extraordinarias están establecidas en el documento como del 2 al 6 de marzo de 2026.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.3,
+    "error": null
+  },
+  {
+    "id": 18,
+    "categoria": "calendario",
+    "pregunta": "¿Cuándo es la semana de exámenes finales?",
+    "respuesta": "No tengo esa información. Sugiero consultar con Secretaria Académica para obtener más detalles sobre los horarios y fechas de exámenes finales.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.51,
+    "error": null
+  },
+  {
+    "id": 19,
+    "categoria": "calendario",
+    "pregunta": "¿Cuándo son las vacaciones o receso académico?",
+    "respuesta": "Los estudiantes del ISTTE tienen derecho a disfrutar de vacaciones o receso académico del 20 de julio al 21 de agosto de 2026. Durante este periodo, el personal docente y administrativo mantiene una atención reducida.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.24,
+    "error": null
+  },
+  {
+    "id": 20,
+    "categoria": "calendario",
+    "pregunta": "¿Cuándo son los exámenes de recuperación?",
+    "respuesta": "Los exámenes de recuperación para estudiantes con nota entre 5 y 6.99 se rendirán del 20 al 24 de julio de 2026, según el horario publicado por cada coordinación de carrera.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.92,
+    "error": null
+  },
+  {
+    "id": 21,
+    "categoria": "calendario",
+    "pregunta": "¿Dónde se hacen las matrículas ordinarias?",
+    "respuesta": "Las matrículas ordinarias se realizan en línea a través del portal académico del instituto, del 16 al 27 de febrero de 2026. Es necesario tener la documentación de ingreso completa en la Secretaria.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.08,
+    "error": null
+  },
+  {
+    "id": 22,
+    "categoria": "combinada",
+    "pregunta": "Si pierdo una asignatura por inasistencia, ¿puedo rendir el examen de recuperación de julio?",
+    "respuesta": "No tengo esa información. Sugiero consultar con la Secretaria Académica para obtener más información sobre las consecuencias de perder una asignatura por inasistencia y los procedimientos específicos para realizar un examen de recuperación.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.98,
+    "error": null
+  },
+  {
+    "id": 23,
+    "categoria": "combinada",
+    "pregunta": "¿Cuántos días tengo entre el fin de matrículas ordinarias y el inicio de clases?",
+    "respuesta": "¡Claro que sí! Entre el fin de las matrículas ordinarias, el 27 de febrero de 2026, y el inicio de clases, el 1 de marzo de 2026, hay un total de 8 días.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.05,
+    "error": null
+  },
+  {
+    "id": 24,
+    "categoria": "fuera_de_alcance",
+    "pregunta": "¿Cuál es el costo de la pensión mensual?",
+    "respuesta": "Lo siento, pero no tengo esa información. Sugiero consultar con la Secretaria Académica para obtener más información sobre el costo de la pensión mensual.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 5.25,
+    "error": null
+  },
+  {
+    "id": 25,
+    "categoria": "fuera_de_alcance",
+    "pregunta": "¿Quién es el rector actual del instituto?",
+    "respuesta": "Lo siento, no tengo esa información. Sugiero consultar con la Secretaría General para obtener más información sobre el rector actual del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE).",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.65,
+    "error": null
+  },
+  {
+    "id": 26,
+    "categoria": "fuera_de_alcance",
+    "pregunta": "¿Cómo cambio mi contraseña del aula virtual?",
+    "respuesta": "Lo siento, pero no tengo información sobre cómo cambiar la contraseña del aula virtual. Sugiero consultar con la Secretaría Académica para obtener más información y asistencia.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.58,
+    "error": null
+  },
+  {
+    "id": 27,
+    "categoria": "fuera_de_alcance",
+    "pregunta": "¿Cuál es el clima en la ciudad hoy?",
+    "respuesta": "Lo siento, pero no tengo información sobre el clima en la ciudad para responder a tu pregunta. Si necesitas ayuda con algo relacionado con el calendario académico o vacaciones, estaré encantado de ayudarte. Puedes consultar con la Secretaria Académica para obtener más información.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.43,
+    "error": null
+  },
+  {
+    "id": 28,
+    "categoria": "ambigua",
+    "pregunta": "notas",
+    "respuesta": "Lo siento, no tengo información sobre las notas ni el sistema de calificaciones del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). Para obtener más información sobre este tema, te sugiero consultar con la Secretaria Académica.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.08,
+    "error": null
+  },
+  {
+    "id": 29,
+    "categoria": "ambigua",
+    "pregunta": "asdkjaslkdj",
+    "respuesta": "Lo siento, pero no tengo información relevante sobre la pregunta del estudiante. Sugiero consultar con la Secretaria Académica para obtener asistencia y orientación.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 2.49,
+    "error": null
+  },
+  {
+    "id": 30,
+    "categoria": "ambigua",
+    "pregunta": "cuentame sobre el reglamento",
+    "respuesta": "Lo siento, pero no tengo información específica sobre el Reglamento del Regimen Académico del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE) en este momento. Sugiero consultar con la Secretaría Académica para obtener más detalles y clarificaciones sobre los reglamentos y políticas académicas.",
+    "fuentes": [
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\reglamento_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      },
+      {
+        "archivo": "data/reglamentos\\calendario_academico_ejemplo.pdf",
+        "pagina": 0
+      }
+    ],
+    "tiempo_segundos": 3.45,
+    "error": null
+  }
+]
