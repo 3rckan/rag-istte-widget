@@ -4,6 +4,8 @@ Plug-in de asistencia virtual basado en IA Generativa (Llama 3.2 + Ollama) y arq
 
 Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embebible en la plataforma web del instituto.
 
+## Estado
+
 ## Estado: Sprint 1 — Requerimientos y entorno (26 may – 08 jun 2026)
 
 - [x] Estructura de carpetas del proyecto
@@ -39,7 +41,6 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 
 ## Estructura del proyecto
 
-```
 rag-istte-widget/
 ├── data/
 │   └── reglamentos/       # PDFs de ejemplo (Sprint 2); pendientes los oficiales del instituto (US-01)
@@ -60,7 +61,6 @@ rag-istte-widget/
 ├── .env.example
 ├── .gitignore
 └── README.md
-```
 
 ## Pendiente de recopilar (US-01)
 
@@ -101,4 +101,3 @@ python scripts/ingest.py
 ```
 
 Esto genera (o actualiza) la carpeta `chroma_db/` con los vectores de todos los PDFs presentes en `data/reglamentos/`. Actualmente esa carpeta solo contiene los 2 PDFs de ejemplo usados para validar el pipeline — falta reemplazarlos por los documentos oficiales del instituto y volver a correr el script.
-

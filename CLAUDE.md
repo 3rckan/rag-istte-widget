@@ -38,10 +38,25 @@ rag-istte-widget/
 ├── scripts/ingest.py       # Pipeline de ingesta (Sprint 2, implementado)
 ├── scripts/evaluate.py     # Evaluación con 30 consultas (Sprint 4)
 ├── src/rag_chain.py        # Lógica del backend RAG (Sprint 2-3)
-├── app/main.py, app/static/ # Endpoint /query + widget (Sprint 3)
+├── app/main.py              # Endpoint /query + monta /widget (Sprint 3)
+├── app/static/widget.html   # Panel de chat (vive dentro de un iframe)
+├── app/static/widget-loader.js # Burbuja flotante embebible en cualquier página host
+├── qa/                       # QA automatizado (Playwright) de la burbuja — ver qa/README.md
+├── docs/EMBED_GUIDE.md      # Cómo embeber la burbuja en istte.edu.ec y EVA/Moodle
 ├── docs/evaluacion/        # Reportes de evaluación (Sprint 4)
 ├── docs/memoria/           # Borrador de memoria técnica (Sprint 5)
 ├── Dockerfile, render.yaml # Config de despliegue (Sprint 4)
 ├── requirements.txt
+├── requirements-qa.txt      # Dependencias solo para QA (playwright, pytest)
 └── README.md                # Checklist de estado por sprint
 ```
+
+## Diseño de la burbuja flotante (rediseño post-Sprint 3)
+
+El widget se rediseñó como burbuja flotante embebible (antes era un panel
+de chat estático centrado en la página). Referencia visual tomada de
+capturas reales de `istte.edu.ec` (azul `#1a3c6e` / verde `#6fae2e`
+institucionales) y del portal EVA (Moodle, tema claro y minimalista) —
+ver `docs/EMBED_GUIDE.md` para cómo se embebe en cada uno y por qué se
+ubicó abajo-derecha (el sitio público ya tiene una burbuja de WhatsApp
+abajo-izquierda).
