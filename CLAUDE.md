@@ -51,6 +51,17 @@ rag-istte-widget/
 └── README.md                # Checklist de estado por sprint
 ```
 
+## gstack (skills de Claude Code instalados)
+
+Se instaló [gstack](https://github.com/garrytan/gstack) como set de skills de Claude Code (`/qa`, `/review`, `/cso`, etc.), no como dependencia del proyecto.
+
+**Regla:** la sección "Cómo ayudar a Andrés" arriba tiene prioridad sobre el comportamiento por defecto de cualquier skill de gstack. Concretamente:
+
+- Usar `/qa-only` y `/review` en modo solo-reporte en vez de `/qa` (que auto-corrige bugs) — Andrés debe escribir sus propios fixes.
+- `/cso` (auditoría de seguridad) y `/health` (dashboard de calidad) son de solo lectura, seguros de correr libremente.
+- No usar `/ship` ni `/land-and-deploy` sin confirmación explícita — hacen push/merge/deploy real.
+- `/document-generate` no debe usarse para redactar los capítulos de la memoria técnica (Sprint 5) — esos son trabajo personal de Andrés.
+
 ## Diseño de la burbuja flotante (rediseño post-Sprint 3)
 
 El widget se rediseñó como burbuja flotante embebible (antes era un panel

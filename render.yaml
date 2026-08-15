@@ -14,6 +14,8 @@ services:
     plan: standard # minimo recomendado para que Ollama+llama3.2 respondan sin timeouts
     dockerfilePath: ./Dockerfile
     envVars:
+      - key: ENTORNO
+        value: production
       - key: ALLOWED_ORIGINS
         value: https://www.istte.edu.ec # reemplazar por el dominio real del instituto
       - key: OLLAMA_BASE_URL
