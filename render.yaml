@@ -1,0 +1,23 @@
+# render.yaml - Sprint 4 (despliegue en Render.com)
+#
+# IMPORTANTE (limitacion tecnica, ver docs/DEPLOY_RENDER.md): Ollama + los
+# modelos llama3.2 (2 GB) y nomic-embed-text necesitan varios GB de RAM para
+# correr con una latencia razonable. El plan "Free" y el "Starter" de Render
+# (512 MB) NO alcanzan. Se necesita como minimo el plan "Standard" (2 GB) o
+# superior. Este archivo queda listo, pero el plan hay que elegirlo a mano
+# en el dashboard de Render (o cambiar aqui abajo) antes de desplegar.
+
+services:
+  - type: web
+    name: rag-istte-widget
+    runtime: docker
+    plan: standard # minimo recomendado para que Ollama+llama3.2 respondan sin timeouts
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ENTORNO
+        value: production
+      - key: ALLOWED_ORIGINS
+        value: https://www.istte.edu.ec # reemplazar por el dominio real del instituto
+      - key: OLLAMA_BASE_URL
+        value: http://localhost:11434
+    healthCheckPath: /widget/

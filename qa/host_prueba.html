@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pagina de prueba — burbuja embebida</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: #f8f9fa; /* fondo claro similar al de EVA/Moodle */
+  }
+  h1 { color: #1a3c6e; }
+</style>
+</head>
+<body>
+  <h1>TECNOECUATORIANO — pagina de prueba</h1>
+  <p>Esta pagina simula un host (sitio ISTTE o EVA) para verificar que la
+     burbuja flotante del asistente se ve y funciona bien embebida.</p>
+  <p>Abre esta pagina con el backend corriendo en <code>http://127.0.0.1:8000</code>
+     (<code>uvicorn app.main:app --reload</code>) y deberia aparecer la
+     burbuja azul en la esquina inferior derecha.</p>
+
+  <script src="http://127.0.0.1:8000/widget/widget-loader.js"></script>
+</body>
+</html>

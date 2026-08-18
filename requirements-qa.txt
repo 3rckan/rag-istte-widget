@@ -1,0 +1,6 @@
+# Dependencias solo para QA (no se necesitan para correr el backend).
+# Instalar con: pip install -r requirements-qa.txt
+# y luego:      playwright install chromium
+pytest==8.3.3
+pytest-playwright==0.5.2
+playwright==1.62.0
