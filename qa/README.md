@@ -3,10 +3,13 @@
 Pruebas de interfaz con [Playwright](https://playwright.dev/python/) sobre
 `app/static/widget.html` y `app/static/widget-loader.js`. Verifican que la
 burbuja aparezca, que el panel abra/cierre, que se muestren mensajes y
-fuentes, y el manejo de error de red. El endpoint `/query` se **mockea**
-(`page.route`) para que las pruebas sean rápidas y no dependan de que
-Ollama esté corriendo — la calidad de las respuestas del modelo la evalúa
-`scripts/evaluate.py` por separado (Sprint 4), no esta suite.
+fuentes, y el manejo de error de red. Tanto el endpoint `/query` como los
+archivos estáticos del widget (`widget-loader.js`, `widget.html`) se
+**mockean** (`page.route`), así que la suite es standalone: no depende de
+que Ollama ni `uvicorn` estén corriendo — la calidad de las respuestas del
+modelo la evalúa `scripts/evaluate.py` por separado (Sprint 4), y la
+prueba manual contra el backend real se hace levantando `uvicorn` y
+abriendo `qa/host_prueba.html` (ver `docs/EMBED_GUIDE.md`).
 
 ## Instalación (una sola vez)
 
@@ -17,14 +20,9 @@ playwright install chromium
 
 ## Cómo correrlas
 
-1. Levantar el backend en otra terminal:
-   ```
-   uvicorn app.main:app --reload
-   ```
-2. Correr la suite:
-   ```
-   pytest qa/ -v
-   ```
+```
+pytest qa/ -v
+```
 
 Para ver el navegador mientras corre (útil para depurar visualmente):
 

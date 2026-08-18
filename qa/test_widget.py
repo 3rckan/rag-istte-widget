@@ -1,15 +1,14 @@
 # qa/test_widget.py
 # QA automatizado de la burbuja flotante con Playwright.
 #
-# No depende de Ollama/ChromaDB: el endpoint /query se intercepta con
-# page.route() para devolver una respuesta fija, asi que estas pruebas
-# validan la INTERFAZ (burbuja, panel, mensajes) y no el modelo. La
-# evaluacion del modelo en si ya la cubre scripts/evaluate.py (Sprint 4).
-#
-# Requiere el backend corriendo en http://127.0.0.1:8000:
-#   uvicorn app.main:app --reload
-# y luego, en otra terminal:
-#   pytest qa/ -v
+# Suite standalone: no depende de Ollama/ChromaDB ni de que uvicorn este
+# corriendo. host_prueba.html apunta a http://127.0.0.1:8000/widget/... pero
+# esas rutas (widget-loader.js, widget.html) y el endpoint /query se
+# interceptan con page.route() y se sirven desde archivos locales o
+# respuestas fijas. Estas pruebas validan la INTERFAZ (burbuja, panel,
+# mensajes), no el modelo — la evaluacion del modelo la cubre
+# scripts/evaluate.py (Sprint 4), y la prueba manual contra el backend real
+# se hace con uvicorn levantado (ver qa/README.md).
 
 import pathlib
 
@@ -17,6 +16,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 HOST_PRUEBA = (pathlib.Path(__file__).parent / "host_prueba.html").resolve().as_uri()
+STATIC_DIR = pathlib.Path(__file__).parent.parent / "app" / "static"
 RESPUESTA_FALSA = {
     "respuesta": "Las matriculas se abren en el periodo academico indicado en el calendario.",
     "fuentes": [{"archivo": "reglamento_ejemplo.pdf"}],
@@ -26,6 +26,20 @@ RESPUESTA_FALSA = {
 def _mockear_query(page: Page):
     """Reemplaza el backend real del /query por una respuesta fija y rapida."""
     page.route("**/query", lambda route: route.fulfill(json=RESPUESTA_FALSA))
+
+
+@pytest.fixture(autouse=True)
+def mockear_estaticos_widget(page: Page):
+    """Sirve widget-loader.js y widget.html desde app/static/ directamente,
+    sin pasar por un servidor real, para que la suite no dependa de uvicorn."""
+
+    def _servir(nombre_archivo: str, content_type: str):
+        contenido = (STATIC_DIR / nombre_archivo).read_bytes()
+        return lambda route: route.fulfill(body=contenido, content_type=content_type)
+
+    page.route("**/widget/widget-loader.js", _servir("widget-loader.js", "application/javascript"))
+    page.route("**/widget/widget.html", _servir("widget.html", "text/html"))
+    yield
 
 
 def test_burbuja_visible_en_pagina_host(page: Page):
