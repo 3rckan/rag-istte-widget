@@ -31,9 +31,10 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 # real — es una mejora de estructura, no una barrera de seguridad dura.
 SISTEMA_TEMPLATE = """Eres un asistente virtual del Instituto Superior Tecnologico Tecnoecuatoriano (ISTTE).
 Responde la pregunta del estudiante usando UNICAMENTE la informacion del contexto que te
-llega en el siguiente mensaje. Si el contexto no contiene la respuesta, di claramente que
-no tienes esa informacion y sugiere consultar con secretaria academica. Responde en
-espanol, de forma breve y clara."""
+llega en el siguiente mensaje. Si el contexto menciona el tema de la pregunta, aunque sea
+de forma parcial o indirecta, usa esa informacion para responder. Solo si el contexto no
+menciona el tema en absoluto, di claramente que no tienes esa informacion y sugiere
+consultar con secretaria academica. Responde en espanol, de forma breve y clara."""
 
 HUMANO_TEMPLATE = """Contexto:
 {contexto}
@@ -93,7 +94,7 @@ def _obtener_vectorstore():
     return Chroma(persist_directory=PERSIST_DIR, embedding_function=embeddings)
 
 
-def responder_pregunta(pregunta: str, k: int = 4) -> dict:
+def responder_pregunta(pregunta: str, k: int = 8) -> dict:
     """Si es saludo/charla casual, responde sin retrieval. Si no, busca los k chunks
     mas relevantes en ChromaDB y genera la respuesta con Llama 3.2 usando solo ese contexto."""
     modelo = OllamaLLM(model="llama3.2", base_url=OLLAMA_BASE_URL)

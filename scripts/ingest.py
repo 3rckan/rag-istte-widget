@@ -67,8 +67,8 @@ def cargar_documentos():
 def dividir_en_chunks(documentos):
     """Divide los documentos en fragmentos manejables para el embedding."""
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=700, 
-        chunk_overlap=100,
+        chunk_size=1200,
+        chunk_overlap=200,
         separators=["\n\n", "\n", ". ", " ", ""]
     )
     chunks = splitter.split_documents(documentos)

@@ -3,6 +3,11 @@ __pycache__/
 *.pyc
 .env
 chroma_db/
+chroma_db_backup_*/
 .DS_Store
 *.log
 .gstack/
+
+# PDFs de ejemplo/ficticios y personales de Andres (EVA_*), excluidos a
+# proposito del corpus oficial — ver docs/SETUP_PDFS.md
+data/_excluidos_evaluacion_oficial/
