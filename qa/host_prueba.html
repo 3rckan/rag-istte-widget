@@ -64,15 +64,15 @@
     width: 38px;
     height: 38px;
     border-radius: 9px;
-    background: linear-gradient(135deg, var(--istte-verde), var(--istte-verde-osc));
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 17px;
-    font-weight: 800;
-    color: #fff;
     flex-shrink: 0;
+    overflow: hidden;
+    padding: 3px;
   }
+  .marca-icono img { width: 100%; height: 100%; object-fit: contain; }
   .marca-texto { line-height: 1.15; }
   .marca-texto .top { font-size: 14.5px; }
   .marca-texto .sub { font-size: 10.5px; font-weight: 400; opacity: 0.75; letter-spacing: 0.5px; }
@@ -289,7 +289,7 @@
   <header class="navbar">
     <div class="navbar-inner">
       <div class="marca">
-        <div class="marca-icono">IT</div>
+        <div class="marca-icono"><img src="assets/newlogotecno.png" alt="Logo ISTTE"></div>
         <div class="marca-texto">
           <div class="top">TECNOECUATORIANO</div>
           <div class="sub">INSTITUTO SUPERIOR TECNOLÓGICO ISTTE</div>
@@ -391,7 +391,7 @@
     <div class="footer-inner">
       <div>
         <div class="footer-marca">
-          <div class="marca-icono">IT</div>
+          <div class="marca-icono"><img src="assets/newlogotecno.png" alt="Logo ISTTE"></div>
           <strong style="color:#fff; font-size:14px;">TECNOECUATORIANO</strong>
         </div>
         <p>Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). Formación técnica y
@@ -443,7 +443,7 @@
 
   <!-- Widget del Asistente Virtual ISTTE. Cambiar el origen del script si el
        backend corre en otro puerto/host (ver docs/EMBED_GUIDE.md). -->
-  <script src="http://127.0.0.1:8765/widget/widget-loader.js"></script>
+  <script src="http://127.0.0.1:8000/widget/widget-loader.js"></script>
 
 </body>
 </html>

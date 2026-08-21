@@ -1,0 +1,572 @@
+[
+  {
+    "id": 1,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el correo institucional general de contacto del ISTTE?",
+    "esperado": "info@istte.edu.ec",
+    "respuesta": "El correo institucional general de contacto del ISTTE es info@istte.edu.ec.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 14.07,
+    "error": null
+  },
+  {
+    "id": 2,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el costo del proceso de validación de conocimientos y experiencia para ingresar a una carrera?",
+    "esperado": "$2600, con opción de pago de contado, tarjeta de crédito, u 8 pagos mensuales",
+    "respuesta": "El costo del proceso de validación de conocimientos y experiencia para ingresar a una carrera en el Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE) es de $2600.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.37,
+    "error": null
+  },
+  {
+    "id": 3,
+    "categoria": "dominio",
+    "pregunta": "¿Cuántos años de edad debe tener un aspirante para el proceso de validación de conocimientos y experiencia?",
+    "esperado": "25 años o más",
+    "respuesta": "No tengo información sobre la edad mínima requerida para el proceso de validación de conocimientos y experiencia en el Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). Sugiero consultar con la Secretaría Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.47,
+    "error": null
+  },
+  {
+    "id": 4,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el enlace del portal de empleo del ISTTE?",
+    "esperado": "https://portalempleo.istte.edu.ec/",
+    "respuesta": "El enlace del portal de empleo del ISTTE es: https://portalempleo.istte.edu.ec/.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.56,
+    "error": null
+  },
+  {
+    "id": 5,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el horario de atención de la Sede Matriz (La Magdalena)?",
+    "esperado": "Lunes a viernes, 8:00 a 19:00",
+    "respuesta": "Según la información proporcionada, el horario de atención de la Sede Matriz (La Magdalena) es de lunes a viernes de 8:00 a 19:00.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.47,
+    "error": null
+  },
+  {
+    "id": 6,
+    "categoria": "dominio",
+    "pregunta": "¿Qué documento relacionado a salud se pide en PDF antes de iniciar las Prácticas Preprofesionales?",
+    "esperado": "Carnet de vacunación COVID-19 (y para carreras de Salud y Bienestar, vacunas de hepatitis B y tétanos)",
+    "respuesta": "Según el contexto proporcionado, se requiere una copia a color de vacunas de hepatitis B y tétanos actualizadas en PDF, junto con la cédula y papeleta de votación, para iniciar las Prácticas Preprofesionales.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\GUÍA DEL DOCENTE DE AULAS VIRTUALES (EVA) - PERIODO P37.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.99,
+    "error": null
+  },
+  {
+    "id": 7,
+    "categoria": "dominio",
+    "pregunta": "¿Qué módulos están disponibles en el SIACAD tras iniciar sesión?",
+    "esperado": "Académico, Investigación, Vinculación, PPP, Reportes y Configuración",
+    "respuesta": "Según el contexto proporcionado, en el menú de SIACAD, hay los siguientes módulos disponibles tras iniciar sesión:\n\n* 8.1 Auto Inscripción\n* 8.2 Auto Matriculación\n* 8.3 Pago de la Auto Matrícula\n\nEstos módulos están relacionados con la inscripción y matrícula de estudiantes en el Instituto Superior Tecnologico Tecnoecuatoriano (ISTTE).",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 9.75,
+    "error": null
+  },
+  {
+    "id": 8,
+    "categoria": "dominio",
+    "pregunta": "¿Qué información muestra el reporte de Notas y Asistencias de un estudiante en SIACAD?",
+    "esperado": "Promedio (GPA), créditos aprobados, y detalle de notas y porcentaje de asistencia por materia y nivel, con el docente responsable",
+    "respuesta": "El reporte de Notas y Asistencias del estudiante en SIACAD muestra el promedio (GPA), créditos aprobados y el detalle de notas y porcentaje de asistencia por materia y nivel cursado, incluyendo el estado (aprobado/reprobado) y el docente responsable.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 9.08,
+    "error": null
+  },
+  {
+    "id": 9,
+    "categoria": "dominio",
+    "pregunta": "¿Qué rol se encarga de tomar la asistencia diaria y registrar notas parciales de los estudiantes?",
+    "esperado": "Docente",
+    "respuesta": "No tengo información específica sobre el rol que se encarga de tomar la asistencia diaria y registrar notas parciales de los estudiantes. Sugiero consultar con la Secretaría Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.67,
+    "error": null
+  },
+  {
+    "id": 10,
+    "categoria": "dominio",
+    "pregunta": "¿Quién aprueba la emisión de certificados e informes finales de investigación?",
+    "esperado": "Gestión de Investigación",
+    "respuesta": "No tengo esa información. Sugiero consultar con la Secretaría Académica.",
+    "fuentes": [
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.76,
+    "error": null
+  },
+  {
+    "id": 11,
+    "categoria": "dominio",
+    "pregunta": "¿Qué acciones puede realizar el Docente Director de Proyecto en Vinculación con la Sociedad?",
+    "esperado": "Postular proyectos, inscribir estudiantes, supervisar el seguimiento en campo y aprobar el cumplimiento de horas",
+    "respuesta": "Según el contexto proporcionado, el Docente Director de Proyecto en Vinculación con la Sociedad puede realizar las siguientes acciones:\n\n1. Postular proyectos comunitarios completando perfil, justificación y plan de aprendizaje.\n2. Inscribe a los estudiantes seleccionados en los proyectos de vinculación.\n3. Realiza el seguimiento de las actividades en campo y valida el cumplimiento del número de horas asignadas.\n4. Aproba la inscripción de los estudiantes en los proyectos de vinculación.",
+    "fuentes": [
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 11.46,
+    "error": null
+  },
+  {
+    "id": 12,
+    "categoria": "dominio",
+    "pregunta": "¿Quién administra el uso de talleres, laboratorios y equipos informáticos, y reporta incidencias técnicas?",
+    "esperado": "Técnico de Laboratorio",
+    "respuesta": "Según el contexto proporcionado, el técnico de laboratorio gestiona el uso de talleres, laboratorios y equipos informáticos, y reporta mantenimientos, insumos consumidos y reporta incidencias técnicas.",
+    "fuentes": [
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.71,
+    "error": null
+  },
+  {
+    "id": 13,
+    "categoria": "dominio",
+    "pregunta": "¿Qué rol brinda seguimiento a estudiantes con Necesidades Educativas Especiales (NEE)?",
+    "esperado": "Docente y Bienestar Estudiantil (UBE)",
+    "respuesta": "No tengo información específica sobre el rol que brinda el seguimiento a estudiantes con Necesidades Educativas Especiales (NEE) en el contexto del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). Para obtener esta información, te recomiendo consultar con la Secretaría Académica del ISTTE.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 9.42,
+    "error": null
+  },
+  {
+    "id": 14,
+    "categoria": "dominio",
+    "pregunta": "¿Cuáles son los campos obligatorios para cambiar la contraseña en la plataforma EVA?",
+    "esperado": "Contraseña actual, nueva contraseña y confirmar nueva contraseña",
+    "respuesta": "Para cambiar la contraseña en la plataforma EVA, según el tutorial, los campos obligatorios son: \n\n* Contraseña actual\n* Nueva contraseña\n* Confirmar nueva contraseña",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.49,
+    "error": null
+  },
+  {
+    "id": 15,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el nombre del botón para guardar los cambios al cambiar la contraseña en EVA?",
+    "esperado": "\"Guardar cambios\"",
+    "respuesta": "El nombre del botón para guardar los cambios al cambiar la contraseña en EVA es \"Cambiar contraseña\".",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 7.63,
+    "error": null
+  },
+  {
+    "id": 16,
+    "categoria": "dominio",
+    "pregunta": "¿Qué formato de archivo se recomienda usar al enviar una tarea en la plataforma EVA?",
+    "esperado": "PDF",
+    "respuesta": "Según el contexto proporcionado, se recomienda usar formatos PDF al enviar una tarea en la plataforma EVA.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.72,
+    "error": null
+  },
+  {
+    "id": 17,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el tamaño máximo permitido para adjuntar un archivo al enviar un correo institucional?",
+    "esperado": "50 MB",
+    "respuesta": "Según el contexto proporcionado, el tamaño máximo permitido para adjuntar un archivo al enviar un correo institucional es de 50 MB.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 7.89,
+    "error": null
+  },
+  {
+    "id": 18,
+    "categoria": "dominio",
+    "pregunta": "¿Qué plataforma externa se usa para la biblioteca virtual del instituto?",
+    "esperado": "eLibro (elibro.net)",
+    "respuesta": "La plataforma externa utilizada para la biblioteca virtual del instituto es eLibro, con la URL: https://elibro.net/es/lc/istte/inicio.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.11,
+    "error": null
+  },
+  {
+    "id": 19,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es la regla para formar la contraseña inicial de acceso a la biblioteca virtual eLibro?",
+    "esperado": "Número de cédula del estudiante + primera letra del nombre en minúscula",
+    "respuesta": "La regla para formar la contraseña inicial de acceso a la biblioteca virtual eLibro es completar el campo \"Correo\" con el formato institucional: `nombre.apellido@tecnovirtual.edu.ec` y completar el campo \"Contraseña\" con la siguiente regla: número de cédula del estudiante + primera letra del nombre en minúscula.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.91,
+    "error": null
+  },
+  {
+    "id": 20,
+    "categoria": "dominio",
+    "pregunta": "¿Qué se usa como nombre de usuario para iniciar sesión en el SIACAD?",
+    "esperado": "El número de cédula del estudiante",
+    "respuesta": "No tengo información específica sobre el nombre de usuario que se utiliza para iniciar sesión en el SIACAD. Sugiero consultar con la Secretaria Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.97,
+    "error": null
+  },
+  {
+    "id": 21,
+    "categoria": "dominio",
+    "pregunta": "¿Qué opciones aparecen dentro del menú 'Búsquedas' del SIACAD?",
+    "esperado": "Buscar evaluación al docente, y Buscar Matrículas",
+    "respuesta": "En el menú 'Búsquedas' del SIACAD, aparecen dos opciones:\n\n1. Buscar evaluación al docente\n2. Buscar Matrículas",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 9.78,
+    "error": null
+  },
+  {
+    "id": 22,
+    "categoria": "dominio",
+    "pregunta": "¿Cuál es el dominio de correo institucional que usan los estudiantes del Tecnoecuatoriano?",
+    "esperado": "@tecnovirtual.edu.ec",
+    "respuesta": "El dominio de correo institucional que usan los estudiantes del Tecnoecuatoriano es el mismo que el dominio del sitio web oficial de la institución, que es: tecnoecuatoriano.edu.ec.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.13,
+    "error": null
+  },
+  {
+    "id": 23,
+    "categoria": "combinada",
+    "pregunta": "Si quiero saber mis notas y mi porcentaje de asistencia, ¿en qué sistema y en qué reporte lo encuentro?",
+    "esperado": "En el SIACAD, en el reporte de Notas y Asistencias (Reportes > Notas y Asistencias Alumnos)",
+    "respuesta": "Para saber tus notas y tu porcentaje de asistencia, debes acceder al sistema SIACAD y seleccionar la opción \"Reportes\" en el menú principal. Luego, desplega el menú \"Reportes\" y selecciona la opción \"Notas y Asistencias Alumnos\". Esto te llevará a la página donde podrás ver tus notas y tu porcentaje de asistencia.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 9.45,
+    "error": null
+  },
+  {
+    "id": 24,
+    "categoria": "combinada",
+    "pregunta": "Como estudiante, ¿ante quién postulo y quién finalmente aprueba un proyecto de investigación?",
+    "esperado": "El Docente Investigador postula el proyecto; Gestión de Investigación revisa/aprueba",
+    "respuesta": "Se postuló el proyecto de investigación ante el Gestor de Investigación, quien finalmente lo aprueba.",
+    "fuentes": [
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\matriz_roles_permisos_depurada.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.82,
+    "error": null
+  },
+  {
+    "id": 25,
+    "categoria": "fuera_de_dominio",
+    "pregunta": "¿Cuál es el costo de la pensión mensual de la carrera de Enfermería regular (no por validación)?",
+    "esperado": "No está en el corpus (el catálogo solo da el costo de $2600 del proceso de validación, no de pensiones regulares)",
+    "respuesta": "Lo siento, pero no tengo información específica sobre el costo de la pensión mensual de la carrera de Enfermería regular (no por validación) en el Instituto Superior Tecnologico Tecnoecuatoriano (ISTTE). Para obtener esta información, te recomiendo consultar con la Secretaría Académica del ISTTE.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 9.84,
+    "error": null
+  },
+  {
+    "id": 26,
+    "categoria": "fuera_de_dominio",
+    "pregunta": "¿Quién es el rector actual del instituto?",
+    "esperado": "No está en el corpus",
+    "respuesta": "No tengo información sobre el rector actual del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). Para obtener esta información, te recomiendo consultar con la Secretaría Académica del ISTTE.",
+    "fuentes": [
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf"
+    ],
+    "tiempo_segundos": 8.29,
+    "error": null
+  },
+  {
+    "id": 27,
+    "categoria": "fuera_de_dominio",
+    "pregunta": "¿Cómo cambio la contraseña del WiFi del campus?",
+    "esperado": "No está en el corpus",
+    "respuesta": "Lo siento, pero no tengo información sobre cómo cambiar la contraseña del WiFi del campus. Sugiero consultar con la Secretaría Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 9.14,
+    "error": null
+  },
+  {
+    "id": 28,
+    "categoria": "fuera_de_dominio",
+    "pregunta": "¿Cuál es el clima en la ciudad hoy?",
+    "esperado": "No está en el corpus / no es competencia del asistente",
+    "respuesta": "Lo siento, pero no tengo información sobre el clima en la ciudad hoy. No tengo acceso a información meteorológica en tiempo real. Sugiero consultar con la Secretaría Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\videos_conocetuplataformaISTTE.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 7.92,
+    "error": null
+  },
+  {
+    "id": 29,
+    "categoria": "ambigua",
+    "pregunta": "notas",
+    "esperado": "Debería pedir aclaración o dar una respuesta general prudente, no inventar datos",
+    "respuesta": "Lo siento, pero no tengo información sobre \"notas\" en el contexto del Instituto Superior Tecnológico Tecnoecuatoriano (ISTTE). No tengo información sobre los formatos de vinculación ni sobre cómo acceder a ellos. Te sugiero consultar con la Secretaría Académica para obtener más información.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.95,
+    "error": null
+  },
+  {
+    "id": 30,
+    "categoria": "ambigua",
+    "pregunta": "asdkjaslkdj",
+    "esperado": "Debería indicar que no entiende la pregunta, no inventar una respuesta",
+    "respuesta": "Lo siento, pero parece que no tengo información sobre la pregunta del estudiante. No hay contexto relacionado con la pregunta, por lo que no puedo proporcionar una respuesta. Si necesitas ayuda con algo más, sugiero consultar con la Secretaria Académica.",
+    "fuentes": [
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf",
+      "data/reglamentos\\ISTTE_Catalogo_Procesos_Digitales.pdf"
+    ],
+    "tiempo_segundos": 8.71,
+    "error": null
+  }
+]

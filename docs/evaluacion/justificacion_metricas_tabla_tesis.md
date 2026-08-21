@@ -185,4 +185,101 @@ instrucción del prompt para permitir inferencia razonable sobre el contexto
 recuperado) y volver a correr `scripts/evaluate_oficial.py` para verificar
 si las métricas se acercan a los criterios de aceptación. El script y el set
 de preguntas quedan versionados para que la corrida sea reproducible en
+el futuro.
+
+## 8. Segunda corrida — 2026-08-20, tras iteración sobre las causas raíz
+
+**Trazabilidad:** `docs/evaluacion/resultados_oficiales_20260820_182117.json`
+
+Siguiendo la recomendación de la sección 7, se aplicaron 3 cambios al
+pipeline y se agregaron 2 PDFs institucionales reales nuevos, y se volvió
+a correr la evaluación completa (mismas 30 preguntas, mismo scoring
+manual contra el texto fuente):
+
+**Cambios al pipeline:**
+- `chunk_size` 700→1200, `chunk_overlap` 100→200 (`scripts/ingest.py`).
+- `k` 4→8 (`src/rag_chain.py`).
+- `SISTEMA_TEMPLATE` suavizado: instruye al modelo a usar el contexto
+  cuando menciona el tema aunque sea de forma parcial/indirecta, en vez de
+  negarse ante cualquier no-coincidencia literal.
+
+**Cambio al corpus:** se agregaron 2 PDFs reales entregados a Andrés —
+`GUÍA DEL DOCENTE DE AULAS VIRTUALES (EVA) - PERIODO P37.pdf` y
+`GUÍA DEL ESTUDIANTE DE AULAS VIRTUALES (EVA) - PERIODO P37.pdf` — al
+corpus institucional (ahora 5 documentos, 81 chunks). Se reconfirmó antes
+de reingestar que los 2 PDFs ficticios de ejemplo seguían fuera del
+corpus (habían reaparecido en `data/reglamentos/` porque su exclusión
+nunca se había comiteado a git — se corrigió antes de correr la
+evaluación, para no repetir la contaminación de datos ficticios).
+
+### Resultados comparados
+
+| Métrica | Criterio | Corrida 2026-08-18 | Corrida 2026-08-20 |
+|---|---|---|---|
+| Precisión semántica | > 85.0% | 50.0% (12/24) | **58.3% (14/24)** |
+| Fidelidad a la fuente | > 90.0% | 83.3% (25/30) | **86.7% (26/30)** |
+| Respuestas fuera de dominio | 100.0% | 100.0% (4/4) | 100.0% (4/4) |
+| Tiempo de respuesta | < 4.00 s | 7.88 s | **8.85 s** |
+
+Mejoraron precisión semántica (+8.3 pp) y fidelidad (+3.4 pp). El tiempo
+empeoró (+0.97 s), esperable: k=8 le da al modelo el doble de contexto
+para procesar que antes. Sigue sin cumplirse ninguno de los 3 criterios
+de precisión/fidelidad/tiempo — la iteración movió la aguja pero no
+resolvió el problema de fondo.
+
+### Hallazgo nuevo: falsos negativos bajaron, pero aparecieron respuestas incorrectas *confiadas*
+
+De las 4 preguntas de roles/permisos que fallaban en la corrida anterior
+(9, 10, 13, 20), las 4 **siguen fallando** con "no tengo información" —
+el prompt suavizado no las arregla porque el chunk correcto no llega al
+top-k (es un problema de retrieval, no de generación; ver también el
+hallazgo de `rag_widget_eva_personal_pdfs` sobre chunks de tabla con
+mucho texto de encabezado diluyendo el embedding).
+
+Lo que sí cambió: aparecieron **2 casos nuevos de respuesta incorrecta
+pero presentada con confianza**, un patrón más riesgoso que un simple
+rechazo porque no hay ninguna señal (“no tengo información”) que alerte
+al estudiante de que algo está mal:
+
+- **Pregunta 7** ("¿qué módulos hay en SIACAD?"): el modelo respondió con
+  una lista de sub-opciones de otro submenú (Auto Inscripción, Auto
+  Matriculación, Pago de Auto Matrícula), presentada como si fuera la
+  lista de módulos — no lo es.
+- **Pregunta 22** (dominio de correo estudiantil): el modelo inventó
+  `tecnoecuatoriano.edu.ec`, que no coincide con ninguno de los dos
+  dominios reales que aparecen en el corpus (`red360.net` en el catálogo,
+  `@tecnovirtual.edu.ec` en el tutorial en video — ver sección 5.2). A
+  diferencia de la corrida anterior, donde esta misma pregunta se
+  recalificó como fiel por estar respaldada literalmente por una de las
+  dos fuentes contradictorias, esta vez la respuesta no coincide con
+  ninguna — es fabricación nueva, no una fuente contradictoria heredada.
+
+Es un trade-off real y medible: suavizar el prompt para que el modelo
+"se anime" a inferir sobre contexto parcial reduce los falsos negativos,
+pero también reduce la fricción que antes evitaba que inventara cuando el
+contexto es ambiguo o hay varias secciones parecidas compitiendo. Vale la
+pena discutirlo explícitamente en el capítulo de discusión/conclusiones
+en vez de presentar solo el número agregado de fidelidad.
+
+### Nota sobre no-determinismo
+
+Las preguntas 15 y 20 fallan en ambas corridas, pero con **errores
+distintos** cada vez (P15: "Cambiar contraseña" en ambas corridas,
+consistente; P20: en la corrida anterior confundió el login de SIACAD
+con el de Webmail, en esta corrida directamente se negó a responder). Es
+evidencia adicional de que Llama 3.2 no es determinista incluso con el
+mismo contexto recuperado — un mismo fallo puede manifestarse de forma
+distinta entre corridas, lo cual es relevante para la sección de
+limitaciones del estudio (sección 6).
+
+### Recomendación actualizada
+
+El problema de retrieval en tablas (roles/permisos) sigue sin resolverse
+y es la causa raíz individual con más impacto (4/10 de las preguntas
+incorrectas). Antes de una tercera iteración, valdría más la pena atacar
+específicamente ese patrón (por ejemplo, reformatear
+`matriz_roles_permisos_depurada.pdf` para que cada rol sea su propio
+chunk autocontenido en vez de una tabla larga) que seguir subiendo `k`
+en general, que ya está empeorando el tiempo de respuesta sin arreglar
+ese tipo de falla.
 cualquier momento.

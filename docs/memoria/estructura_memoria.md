@@ -13,6 +13,13 @@ marcadas 📝 son las que **tenés que escribir vos**: son justo las que te van
 a preguntar en la defensa oral, así que no tiene sentido que las arme por
 vos — union de eso depende que puedas explicarlas sin leer un papel.
 
+**Actualización 2026-08-20:** el contenido factual (arquitectura, corpus,
+metodología y las dos corridas reales de evaluación) está consolidado y
+más al día en `docs/memoria/informe_tecnico_desarrollo.md` — usalo como
+fuente principal para los Cap. 2–4, y los datos de evaluación de la
+sección 5 de ese informe como base para el Cap. 5 (la interpretación
+sigue siendo tuya).
+
 ---
 
 ## Capítulo 1 — Introducción 📝
@@ -79,10 +86,12 @@ bloquear todo el proyecto a la espera.)*
 ## Capítulo 4 — Desarrollo / Implementación 📝 (esqueleto con datos ✅)
 
 Subsecciones sugeridas, una por componente construido:
-1. Ingesta de documentos (`scripts/ingest.py`) — carga, *chunking* (700
-   caracteres, 100 de solapamiento), generación de embeddings.
-2. Cadena RAG (`src/rag_chain.py`) — *retrieval* (k=4) + *prompt* +
-   generación.
+1. Ingesta de documentos (`scripts/ingest.py`) — carga, *chunking* (1200
+   caracteres, 200 de solapamiento — subido desde 700/100 original tras
+   la evaluación del 2026-08-18, ver `informe_tecnico_desarrollo.md` §2),
+   generación de embeddings.
+2. Cadena RAG (`src/rag_chain.py`) — *retrieval* (k=8, subido desde k=4) +
+   *prompt* + generación.
 3. API (`app/main.py`) — endpoint, CORS, manejo de errores.
 4. Widget (`app/static/widget.html`) — UI del chat, consumo de la API.
 5. Despliegue (`Dockerfile`, `render.yaml`) — ver `docs/DEPLOY_RENDER.md`.
@@ -93,11 +102,12 @@ tecnología, que ya va en el Cap. 2).
 
 ## Capítulo 5 — Resultados y discusión 📝 (datos ✅, análisis pendiente)
 
-Los datos crudos ya están en `docs/evaluacion/resultados_20260721_231922.md`
-(30 consultas, 0 errores, ~3.02s de latencia promedio). **Importante:** esa
-corrida fue contra los 2 PDFs de EJEMPLO — hay que volver a correr
-`python scripts/evaluate.py` con los documentos oficiales del ISTTE antes
-de que estos resultados sean válidos para la memoria final.
+**Desactualizado:** este párrafo original hablaba de la corrida con PDFs
+de ejemplo (`docs/evaluacion/resultados_20260721_231922.md`). Ya se
+reemplazó por dos corridas oficiales reales contra corpus institucional
+real (2026-08-18 y 2026-08-20) — ver la tabla comparativa y los hallazgos
+en `docs/memoria/informe_tecnico_desarrollo.md` §5, y la metodología
+completa en `docs/evaluacion/justificacion_metricas_tabla_tesis.md`.
 
 Dos hallazgos concretos de esa corrida que valen la pena discutir (son tuyos
 para analizar, no los resuelvo yo):

@@ -15,14 +15,14 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 - [x] Entorno virtual Python 3.11 creado e instalado (`python -m venv venv`)
 - [x] Ollama instalado
 - [x] Modelos descargados en Ollama (`llama3.2` y `nomic-embed-text`)
-- [ ] PDFs de reglamentos, calendarios y guías del instituto recopilados en `data/reglamentos/` (**no se encontraron PDFs de reglamentos en tu Drive — ver sección abajo, sigue pendiente de secretaría**)
+- [-] PDFs de reglamentos, calendarios y guías del instituto recopilados en `data/reglamentos/` (**no se encontraron PDFs de reglamentos en tu Drive — ver sección abajo, sigue pendiente de secretaría**)
 
 ## Estado: Sprint 2 — Pipeline de ingesta y base vectorial (09 jun – 22 jun 2026)
 
 - [x] `scripts/ingest.py` implementado: carga de PDFs (`PyPDFLoader`), división en chunks (`RecursiveCharacterTextSplitter`), embeddings (`OllamaEmbeddings` con `nomic-embed-text`) y persistencia en `Chroma`
 - [x] Probado de punta a punta con 2 PDFs de **ejemplo/ficticios** en `data/reglamentos/` (reglamento académico y calendario académico simulados) — **no son los documentos oficiales del instituto**, que siguen pendientes de secretaría
 - [x] `chroma_db/` generado y verificado: 5 chunks indexados en la colección `langchain`
-- [ ] Reingesta con los PDFs oficiales del ISTTE una vez se obtengan de secretaría
+- [-] Reingesta con los PDFs oficiales del ISTTE una vez se obtengan de secretaría
 
 ## Estado: Sprint 3 — Endpoint `/query` y widget de chat (23 jun – 06 jul 2026)
 
@@ -36,7 +36,7 @@ Servicio desacoplado: backend API (FastAPI) independiente + widget de chat embeb
 - [x] `scripts/evaluate.py`: corre 30 consultas de prueba contra el pipeline y genera un reporte en `docs/evaluacion/` (JSON + Markdown) con respuesta, fuentes recuperadas y tiempo por consulta
 - [x] Evaluación corrida: 30/30 consultas sin errores, ~3s de latencia promedio (ver `docs/evaluacion/resultados_*.md` para el detalle y hallazgos)
 - [x] `Dockerfile` + `entrypoint.sh` + `render.yaml`: configuración lista para desplegar en Render.com (ver `docs/DEPLOY_RENDER.md`)
-- [ ] **Reingesta y re-evaluación con los PDFs oficiales del ISTTE** una vez se obtengan de secretaría — la evaluación actual corrió contra PDFs de ejemplo, solo valida el pipeline
+- [x] **Reingesta y re-evaluación con los PDFs oficiales del ISTTE** una vez se obtengan de secretaría — la evaluación actual corrió contra PDFs de ejemplo, solo valida el pipeline
 - [ ] **Despliegue real en Render.com** — requiere una cuenta de Render y, según lo documentado en `docs/DEPLOY_RENDER.md`, un plan de al menos 2 GB de RAM (el plan gratuito no alcanza para correr Ollama con estos modelos)
 
 ## Estructura del proyecto
@@ -100,4 +100,4 @@ Con el entorno del Sprint 1 listo y al menos un PDF en `data/reglamentos/`:
 python scripts/ingest.py
 ```
 
-Esto genera (o actualiza) la carpeta `chroma_db/` con los vectores de todos los PDFs presentes en `data/reglamentos/`. Actualmente esa carpeta solo contiene los 2 PDFs de ejemplo usados para validar el pipeline — falta reemplazarlos por los documentos oficiales del instituto y volver a correr el script.
+Esto genera (o actualiza) la carpeta `chroma_db/` con los vectores de todos los PDFs presentes en `data/reglamentos/`. Actualmente esa carpeta solo contiene los n PDFs de ejemplo usados para validar el pipeline — falta reemplazarlos por los documentos oficiales del instituto y volver a correr el script.
